@@ -1,0 +1,41 @@
+{
+	"name": "babel-plugin-define-patterns",
+	"version": "0.0.0",
+	"description": "Create constants that replace various expressions at build-time",
+	"main": "index.js",
+	"author": "Jamie Kyle <jamie.kyle@discordapp.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/discord/babel-plugin-define-patterns.git"
+	},
+	"bugs": {
+		"url": "https://github.com/discord/babel-plugin-define-patterns/issues"
+	},
+	"homepage": "https://github.com/discord/babel-plugin-define-patterns#readme",
+	"scripts": {
+		"test": "ava"
+	},
+	"keywords": [
+		"babel",
+		"plugin",
+		"transform",
+		"ast",
+		"compile",
+		"define",
+		"values",
+		"patterns",
+		"static",
+		"expression",
+		"webpack",
+		"defineplugin"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.9.0",
+		"ava": "^3.7.0"
+	},
+	"dependencies": {
+		"@babel/parser": "^7.9.4",
+		"babel-identifiers": "^2.0.1"
+	}
+}

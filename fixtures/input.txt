@@ -1,0 +1,91 @@
+match: {
+  replaceWithTrue;
+}
+
+mismatch: {
+  let replaceWithTrue;
+  replaceWithTrue;
+}
+
+mismatch: {
+  object.replaceWithTrue;
+}
+
+match: {
+  replaceWithFalse;
+}
+
+match: {
+  replaceWithNull;
+}
+
+match: {
+  replaceWith42;
+}
+
+match: {
+  replaceWithHelloWorld;
+}
+
+match: {
+  replaceWithUndefined;
+}
+
+match: {
+  replaceWithArray;
+}
+
+match: {
+  replaceWithObject;
+}
+
+match: {
+  replace.member.expression;
+}
+
+mismatch: {
+  let replace;
+  replace.member.expression;
+}
+
+match: {
+  replace[computed].member.expression;
+}
+
+mismatch: {
+  let computed;
+  replace[computed].member.expression;
+}
+
+match: {
+  replaceCallExpression(a, b, c);
+}
+
+mismatch: {
+  let a;
+  replaceCallExpression(a, b, c);
+}
+
+mismatch: {
+  replaceCallExpression(a, b);
+}
+
+match: {
+  typeof replaceTypeOf;
+}
+
+match: {
+  value instanceof replaceInstanceOf;
+}
+
+match: {
+  1 + 1;
+}
+
+match: {
+  1 * 1;
+}
+
+match: {
+  replaceStaticValues(true, "hello", 42, null, undefined);
+}

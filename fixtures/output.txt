@@ -1,0 +1,94 @@
+match: {
+  true;
+}
+
+mismatch: {
+  let replaceWithTrue;
+  replaceWithTrue;
+}
+
+mismatch: {
+  object.replaceWithTrue;
+}
+
+match: {
+  false;
+}
+
+match: {
+  null;
+}
+
+match: {
+  42;
+}
+
+match: {
+  "hello world";
+}
+
+match: {
+  void 0;
+}
+
+match: {
+  [1, 2, 3];
+}
+
+match: {
+  ({
+    2: "bar",
+    foo: 1
+  });
+}
+
+match: {
+  "replaced member expression";
+}
+
+mismatch: {
+  let replace;
+  replace.member.expression;
+}
+
+match: {
+  "replaced computed member expression";
+}
+
+mismatch: {
+  let computed;
+  replace[computed].member.expression;
+}
+
+match: {
+  "replaced call expression";
+}
+
+mismatch: {
+  let a;
+  replaceCallExpression(a, b, c);
+}
+
+mismatch: {
+  replaceCallExpression(a, b);
+}
+
+match: {
+  "replaced typeof";
+}
+
+match: {
+  "replaced instance of";
+}
+
+match: {
+  "replaced addition";
+}
+
+match: {
+  "replaced multiplication";
+}
+
+match: {
+  "replaced static values";
+}
