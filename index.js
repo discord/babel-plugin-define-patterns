@@ -75,7 +75,7 @@ function matches(path, node) {
 	}
 
 	// Hey there! If you want to support this node.type, you can add support for
-	// it here. See https://github.com/discord/babel-pluin-define-patterns
+	// it here. See https://github.com/discord/babel-plugin-define-patterns
 	throw new Error(`Unexpected pattern: ${node.type}`)
 }
 
